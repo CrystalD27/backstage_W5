@@ -1,5 +1,56 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+main {
+    margin-left: 296px;
 }
+
+.list-group {
+    width: 34.78%;
+}
+
+.tab-content {
+    width: 63.47%;
+}
+
+.assignmentContent {
+    h1 {
+        padding-right: 50px;
+    }
+
+    .allCourses,
+    .all {
+        padding-right: 9px;
+    }
+
+    .dropdown a {
+
+        color: $primary;
+
+    }
+
+
+    .all {
+        padding-bottom: 6px;
+    }
+
+
+    .card-img {
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    .card-details {
+        padding: 16px 32px 16px 64px;
+    }
+
+    .btn {
+        background-color: white;
+        color: $primary;
+    }
+
+}
+
+// color of notification
+// main p-5設定會隨視窗變大（左邊部分） 
+// btn全設定
