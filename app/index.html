@@ -6,15 +6,17 @@ current: index
 ---
 
 <main class="p-5">
-    <div class="container">
-        <div class="assignmentContent d-flex justify-content-between">
-            <div class="assignmentItems d-flex justify-content-center align-items-center mb-5">
-                <h1 class="assignment fs-4">Assignment test</h1>
-                <span class="fs-6 allCourses"> All Courses</span>
+    <div class="container-fluid">
+        <div class="assignmentTitle d-flex justify-content-between">
+            <div class=" d-flex justify-content-center align-items-center mb-5">
+                <h2 class="assignment ">Assignment</h2>
+                <span class="fs-6 allCourses me-4 "> All Courses</span>
                 <div class=" dropdown d-flex">
-                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                    </a>
-                    <span class="material-symbols-outlined ">expand_more</span>
+
+                    <span class="material-symbols-outlined text-primary" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">expand_more</span>
+
+
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li><a class="dropdown-item" href="#">HTML</a></li>
                         <li><a class="dropdown-item" href="#">CSS</a></li>
@@ -24,11 +26,11 @@ current: index
 
             </div>
 
-            <div class="assignmentImgs">
-                <span class="material-symbols-outlined">
+            <div class="assignmentTool">
+                <span class="material-symbols-outlined pe-4">
                     search
                 </span>
-                <span class="material-symbols-outlined alert">
+                <span class="material-symbols-outlined">
                     notifications_active
                 </span>
             </div>
@@ -38,12 +40,11 @@ current: index
         <div class="assignmentContent">
             <div class="selectGroup d-flex justify-content-between">
                 <div class="selectItems">
-                    <div class="all d-flex">All(4)
-                        <div class="dropdown">
-                            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <span class="material-symbols-outlined ">expand_more</span>
-                            </a>
+                    <div class="d-flex fw-bold">All (4)
+                        <div class="dropdown ps-2">
+                            <span class="text-primary material-symbols-outlined " role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">expand_more</span>
+
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">1</a></li>
@@ -54,47 +55,47 @@ current: index
                         </div>
                     </div>
                 </div>
-                <p>2 comments</p>
+                <p class="text-color-gray fs-12">2 comments</p>
             </div>
-
+            <!-- card start -->
             <div class="assigment-list d-flex justify-content-between">
-
+                <!-- left column -->
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+                    <a class="p-6 list-group-item list-group-item-action" id="list-home-list" data-bs-toggle="list"
                         href="#list-home" role="tab" aria-controls="list-home">
                         <ul>
-                            <li class="list-unstyled fs-12">
-                                <div class="d-flex justify-content-between">
+                            <li class="list-unstyled fs-12 ">
+                                <div class="d-flex justify-content-between ">
                                     <p>Chapter Assignment 2</p>
                                     <p>4 hrs ago</p>
                                 </div>
 
-                                <div class="d-flex justify-content-between">
-                                    <p class="fs-6">Please check this file…</p>
-                                    <p>Emily Wang</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-6 fw-bold">Please check this file…</p>
+                                    <p class="text-color-gray">Emily Wang</p>
                                 </div>
                             </li>
 
                         </ul>
                     </a>
-                    <a class=" list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+                    <a class=" p-6 list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
                         href="#list-profile" role="tab" aria-controls="list-profile">
                         <ul>
                             <li class="list-unstyled fs-12">
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between ">
                                     <p>Chapter Assignment 1</p>
                                     <p>12 hrs ago</p>
                                 </div>
 
-                                <div class="d-flex justify-content-between">
-                                    <p class="fs-6">My Homework</p>
-                                    <p>David Xu</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-6 fw-bold">My Homework</p>
+                                    <p class="text-color-gray">David Xu</p>
                                 </div>
                             </li>
 
                         </ul>
                     </a>
-                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+                    <a class="p-6 list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
                         href="#list-messages" role="tab" aria-controls="list-messages">
                         <ul>
                             <li class="list-unstyled fs-12">
@@ -103,15 +104,15 @@ current: index
                                     <p>18 hrs ago</p>
                                 </div>
 
-                                <div class="d-flex justify-content-between">
-                                    <p class="fs-6">Have a problem with this…</p>
-                                    <p>Tony Wei</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-6 fw-bold">Have a problem with this…</p>
+                                    <p class="text-color-gray">Tony Wei</p>
                                 </div>
                             </li>
 
                         </ul>
                     </a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                    <a class="p-6 list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
                         href="#list-settings" role="tab" aria-controls="list-settings">
                         <ul>
                             <li class="list-unstyled fs-12">
@@ -120,25 +121,27 @@ current: index
                                     <p>19 hrs ago</p>
                                 </div>
 
-                                <div class="d-flex justify-content-between">
-                                    <p class="fs-6">Did I do it right?</p>
-                                    <p>Christina Lin</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="fs-6 fw-bold">Did I do it right?</p>
+                                    <p class="text-color-gray">Christina Lin</p>
                                 </div>
                             </li>
 
                         </ul>
                     </a>
                 </div>
-
-
+                <!-- left column end -->
+                <!-- right content start-->
                 <div class="tab-content" id="nav-tabContent">
+                    <!-- first content start -->
                     <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                         aria-labelledby="list-home-list">
-                        <div class="card">
+
+                        <div class="card ">
                             <div class="card-header d-flex justify-content-between align-items-center">
                                 <div class="card-title">
-                                    <p>Chapter Assignment 2 / HTML&CSS</p>
-                                    <p> Please check this file for me, thanks!</p>
+                                    <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                                    <p class="fw-bold"> Please check this file for me, thanks!</p>
                                 </div>
                                 <div class="more">
                                     <span class="material-symbols-outlined">
@@ -146,41 +149,58 @@ current: index
                                     </span>
                                 </div>
                             </div>
-                            <div class="card-body ">
-                                <div class="name d-flex">
-                                    <div class="card-img">
-                                        <img src="./assets/images/emilywang.jpeg" alt="emilywang">
-                                    </div>
-                                    <div class="card-title">Emily Wang
-                                        <p>10:38 AM (4 hours ago)</p>
-                                    </div>
-                                </div>
-                                <div class="card-details">
 
-                                    <p class="card-text">Hi Teacher, the attached file is my homework of chapter 2.
+                            <div class="card-body d-flex">
+
+                                <div class="me-2">
+                                    <img src="./assets/images/emilywang.jpeg" alt="emilywang">
+                                </div>
+                                <div class="card-details pe-3">
+                                    <p class="fw-bold">Emily Wang</p>
+                                    <p class="fs-12 text-color-gray pb-3">10:38 AM (4 hours ago)</p>
+                                    <p class="pb-3">Hi Teacher, the attached file is my homework of chapter 2.
                                         And
                                         here
                                         comes a
-                                        question: Why in the following code the height of the div is bigger than the
+                                        question: Why in the following code the height of the <span
+                                            class="text-primary bg-secondary">div</span> is bigger
+                                        than the
                                         height
-                                        of the img ?
+                                        of the <span class="text-primary bg-secondary">img </span>?
                                         There is a gap below the image, but it doesn’t seems to be a padding/margin.
                                         What is
                                         the gap or
                                         extra space below image?</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+                                    <button href="#" type="button" class="d-flex border btn text-dark bg-secondary "
+                                        download="HW-2-David.zip">
+                                        <span class=" material-symbols-outlined ">
+                                            attach_file
+                                        </span>HW-2-David.zip
+                                    </button>
+
                                 </div>
                             </div>
-                            <div class="card-header">
-                                Featured
-                            </div>
-                            <div class="card-body d-flex">
-                                <div class="card-img">
-                                    <img src="./assets/images/andychen.jpeg" alt="andychen">
+                            <div class="card-body d-flex pt-0 ">
+                                <div class="me-2">
+                                    <img class="mt-3" src="./assets/images/andychen.jpeg" alt="andychen">
                                 </div>
-                                <div class="card-details">
-                                    <h5 class="card-title">Andy Chen (You)</h5>
-                                    <span>13:24 AM (1 hours ago)</span>
+                                <div class="card-details pb-2 pe-3">
+                                    <div class="d-flex justify-content-between border-top pt-3 ">
+                                        <div>
+                                            <p class="">Andy Chen (You)</p>
+                                            <p class="fs-12 text-color-gray pb-3">13:24 AM (1 hours ago)</p>
+                                        </div>
+                                        <div>
+                                            <span class="material-symbols-outlined">
+                                                grade
+                                            </span>
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                            </span>
+                                        </div>
+                                    </div>
                                     <p class="card-text">Hi David, by default, an image is rendered inline, like a
                                         letter so it sits on the same line that a, b, c and d sit on. There is space
                                         below that line for the descenders you find on letters like g, j, p and q.
@@ -189,55 +209,337 @@ current: index
                                         You can:
                                         <br>
                                         <br>
-                                    <p> • adjust the <span>vertical-align</span> of the image to position it
+                                    <p> • adjust the <span class="text-primary bg-secondary">vertical-align</span> of
+                                        the image to position it
                                         elsewhere
                                         (e.g.
-                                        <span>middle</span> le ) or 　
+                                        <span class="text-primary bg-secondary">middle</span> le ) or 　
                                     </p>
 
-                                    <p> • change the <span>display</span> so it isn’t inline.</p>
+                                    <p> • change the <span class="text-primary bg-secondary">display</span> so it isn’t
+                                        inline.</p>
 
 
                                 </div>
                             </div>
 
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <ul class="d-flex list-unstyled">
-                                <li><span class="material-symbols-outlined">
-                                        chevron_left
-                                    </span></li>
-                                <li><span class="material-symbols-outlined">
-                                        navigate_next
-                                    </span></li>
-                            </ul>
-                            <ul class="btn d-flex list-unstyled">
-                                <li><a class="btn btn-primary" href="#" role="button">Mark as read</a></li>
-                                <li><a class="btn btn-primary" href="#" role="button">Reply</a></li>
-                            </ul>
 
                         </div>
+
                     </div>
-                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...
+
+                    <!-- second content -->
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div class="card-title">
+                                    <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                                    <p class="fw-bold"> Please check this file for me, thanks!</p>
+                                </div>
+                                <div class="more">
+                                    <span class="material-symbols-outlined">
+                                        more_vert
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="card-body d-flex">
+
+                                <div class="me-2">
+                                    <img src="./assets/images/emilywang.jpeg" alt="emilywang">
+                                </div>
+                                <div class="card-details pb-2 pe-3">
+                                    <p class="fw-bold">Emily Wang</p>
+                                    <p class="fs-12 text-color-gray pb-3">10:38 AM (4 hours ago)</p>
+                                    <p class="pb-3">Hi Teacher, the attached file is my homework of chapter 2.
+                                        And
+                                        here
+                                        comes a
+                                        question: Why in the following code the height of the <span
+                                            class="text-primary bg-secondary">div</span> is bigger
+                                        than the
+                                        height
+                                        of the <span class="text-primary bg-secondary">img </span>?
+                                        There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                                        What is
+                                        the gap or
+                                        extra space below image?</p>
+
+
+                                    <button href="#" type="button" class="attched border btn text-dark bg-secondary"
+                                        download="HW-2-David.zip">
+                                        <span class=" material-symbols-outlined">
+                                            attach_file
+                                        </span>HW-2-David.zip
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="card-body d-flex ">
+                                <div class="me-2">
+                                    <img class="mt-3" src="./assets/images/andychen.jpeg" alt="andychen">
+                                </div>
+                                <div class="card-details pb-2 pe-3">
+                                    <div class="d-flex justify-content-between border-top pt-3 ">
+                                        <div>
+                                            <p class="">Andy Chen (You)</p>
+                                            <p class="fs-12 text-color-gray pb-3">13:24 AM (1 hours ago)</p>
+                                        </div>
+                                        <div>
+                                            <span class="material-symbols-outlined-google-icon">
+                                                grade
+                                            </span>
+                                            <!-- grade 無法帶入fill:0 -->
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Hi David, by default, an image is rendered inline, like a
+                                        letter so it sits on the same line that a, b, c and d sit on. There is space
+                                        below that line for the descenders you find on letters like g, j, p and q.
+                                        <br>
+                                        <br>
+                                        You can:
+                                        <br>
+                                        <br>
+                                    <p> • adjust the <span class="text-primary bg-secondary">vertical-align</span> of
+                                        the image to position it
+                                        elsewhere
+                                        (e.g.
+                                        <span class="text-primary bg-secondary">middle</span> le ) or 　
+                                    </p>
+
+                                    <p> • change the <span class="text-primary bg-secondary">display</span> so it isn’t
+                                        inline.</p>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
                     </div>
+                    <!-- third content -->
                     <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                        ...
+
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div class="card-title">
+                                    <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                                    <p class="fw-bold"> Please check this file for me, thanks!</p>
+                                </div>
+                                <div class="more">
+                                    <span class="material-symbols-outlined">
+                                        more_vert
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="card-body d-flex">
+
+                                <div class="me-2">
+                                    <img src="./assets/images/emilywang.jpeg" alt="emilywang">
+                                </div>
+                                <div class="card-details pb-2 pe-3">
+                                    <p class="fw-bold">Emily Wang</p>
+                                    <p class="fs-12 text-color-gray pb-3">10:38 AM (4 hours ago)</p>
+                                    <p class="pb-3">Hi Teacher, the attached file is my homework of chapter 2.
+                                        And
+                                        here
+                                        comes a
+                                        question: Why in the following code the height of the <span
+                                            class="text-primary bg-secondary">div</span> is bigger
+                                        than the
+                                        height
+                                        of the <span class="text-primary bg-secondary">img </span>?
+                                        There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                                        What is
+                                        the gap or
+                                        extra space below image?</p>
+
+
+                                    <button href="#" type="button" class="attched border btn text-dark bg-secondary"
+                                        download="HW-2-David.zip">
+                                        <span class=" material-symbols-outlined">
+                                            attach_file
+                                        </span>HW-2-David.zip
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="card-body d-flex ">
+                                <div class="me-2">
+                                    <img class="mt-3" src="./assets/images/andychen.jpeg" alt="andychen">
+                                </div>
+                                <div class="card-details pb-2 pe-3">
+                                    <div class="d-flex justify-content-between border-top pt-3 ">
+                                        <div>
+                                            <p class="">Andy Chen (You)</p>
+                                            <p class="fs-12 text-color-gray pb-3">13:24 AM (1 hours ago)</p>
+                                        </div>
+                                        <div>
+                                            <span class="material-symbols-outlined">
+                                                grade
+                                            </span>
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Hi David, by default, an image is rendered inline, like a
+                                        letter so it sits on the same line that a, b, c and d sit on. There is space
+                                        below that line for the descenders you find on letters like g, j, p and q.
+                                        <br>
+                                        <br>
+                                        You can:
+                                        <br>
+                                        <br>
+                                    <p> • adjust the <span class="text-primary bg-secondary">vertical-align</span> of
+                                        the image to position it
+                                        elsewhere
+                                        (e.g.
+                                        <span class="text-primary bg-secondary">middle</span> le ) or 　
+                                    </p>
+
+                                    <p> • change the <span class="text-primary bg-secondary">display</span> so it isn’t
+                                        inline.</p>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
                     </div>
+                    <!-- fourth content -->
                     <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                        ...
+
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div class="card-title">
+                                    <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                                    <p class="fw-bold"> Please check this file for me, thanks!</p>
+                                </div>
+                                <div class="more">
+                                    <span class="material-symbols-outlined">
+                                        more_vert
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="card-body d-flex">
+
+                                <div class="me-2">
+                                    <img src="./assets/images/emilywang.jpeg" alt="emilywang">
+                                </div>
+                                <div class="card-details pb-2 pe-3">
+                                    <p class="fw-bold">Emily Wang</p>
+                                    <p class="fs-12 text-color-gray pb-3">10:38 AM (4 hours ago)</p>
+                                    <p class="pb-3">Hi Teacher, the attached file is my homework of chapter 2.
+                                        And
+                                        here
+                                        comes a
+                                        question: Why in the following code the height of the <span
+                                            class="text-primary bg-secondary">div</span> is bigger
+                                        than the
+                                        height
+                                        of the <span class="text-primary bg-secondary">img </span>?
+                                        There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                                        What is
+                                        the gap or
+                                        extra space below image?</p>
+
+
+                                    <button href="#" type="button" class="attched border btn text-dark bg-secondary"
+                                        download="HW-2-David.zip">
+                                        <span class=" material-symbols-outlined">
+                                            attach_file
+                                        </span>HW-2-David.zip
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="card-body d-flex ">
+                                <div class="me-2">
+                                    <img class="mt-3" src="./assets/images/andychen.jpeg" alt="andychen">
+                                </div>
+                                <div class="card-details pb-2 pe-3">
+                                    <div class="d-flex justify-content-between border-top pt-3 ">
+                                        <div>
+                                            <p class="">Andy Chen (You)</p>
+                                            <p class="fs-12 text-color-gray pb-3">13:24 AM (1 hours ago)</p>
+                                        </div>
+                                        <div>
+                                            <span class="material-symbols-outlined">
+                                                grade
+                                            </span>
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Hi David, by default, an image is rendered inline, like a
+                                        letter so it sits on the same line that a, b, c and d sit on. There is space
+                                        below that line for the descenders you find on letters like g, j, p and q.
+                                        <br>
+                                        <br>
+                                        You can:
+                                        <br>
+                                        <br>
+                                    <p> • adjust the <span class="text-primary bg-secondary">vertical-align</span> of
+                                        the image to position it
+                                        elsewhere
+                                        (e.g.
+                                        <span class="text-primary bg-secondary">middle</span> le ) or 　
+                                    </p>
+
+                                    <p> • change the <span class="text-primary bg-secondary">display</span> so it isn’t
+                                        inline.</p>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
                     </div>
 
+
+                    <!-- pagination & button -->
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <ul class="d-flex list-unstyled">
+                            <li><a href="#"><span class="material-symbols-outlined me-4">
+                                        chevron_left
+                                    </span></a></li>
+                            <li><a href=""><span class="material-symbols-outlined">
+                                        navigate_next
+                                    </span></a></li>
+                        </ul>
+                        <ul class="btn d-flex list-unstyled">
+                            <li><button type="button" class="btn btn-outline-success me-3 py-2 px-5 " href="#"
+                                    role="button">Mark as
+                                    read</button>
+                                <!-- 無法帶出havor -->
+                                <button type="button" class="btn btn-success py-2 px-5 bg-primary text-light" href="#"
+                                    role="button">Reply</button>
+                            </li>
+                        </ul>
+
+                    </div>
 
                 </div>
 
-
             </div>
-        </div>
 
-        <!-- <div class="button d-flex justify-content-end">
-                <button type="button" class="btn btn-success">Success</button>
-                <button type="button" class="btn btn-success">Success</button>
-            </div> -->
+
+        </div>
     </div>
-    </div>
+
+
+
 </main>

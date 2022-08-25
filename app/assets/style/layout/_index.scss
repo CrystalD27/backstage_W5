@@ -10,47 +10,19 @@ main {
     width: 63.47%;
 }
 
-.assignmentContent {
-    h1 {
-        padding-right: 50px;
-    }
-
-    .allCourses,
-    .all {
-        padding-right: 9px;
-    }
-
-    .dropdown a {
-
-        color: $primary;
-
-    }
-
-
-    .all {
-        padding-bottom: 6px;
-    }
-
-
-    .card-img {
-        img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-        }
-    }
-
-    .card-details {
-        padding: 16px 32px 16px 64px;
-    }
-
-    .btn {
-        background-color: white;
-        color: $primary;
-    }
-
+h2 {
+    padding-right: 50px;
 }
 
-// color of notification
-// main p-5設定會隨視窗變大（左邊部分） 
-// btn全設定
+.assignmentContent {
+
+    img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover
+    }
+
+
+}
